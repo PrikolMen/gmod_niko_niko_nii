@@ -20,7 +20,7 @@ SWEP.Purpose = "I don't even know"
 SWEP.Instructions = "Try left click or right click :)"
 
 -- Models
-SWEP.ViewModel = "models/weapons/v_hands.mdl"
+SWEP.ViewModel = ""
 SWEP.WorldModel = ""
 
 -- Primary
