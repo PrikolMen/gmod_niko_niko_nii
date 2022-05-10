@@ -9,9 +9,10 @@ SWEP.Spawnable = true
 SWEP.Slot = 1
 SWEP.SlotPos = 120
 
--- Info Box
+-- Info Box & Hands
 if (CLIENT) then
     SWEP.DrawWeaponInfoBox = false
+    SWEP.UseHands = true
 end
 
 -- Info
