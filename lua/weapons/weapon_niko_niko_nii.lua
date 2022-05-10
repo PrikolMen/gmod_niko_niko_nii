@@ -5,6 +5,10 @@ SWEP.PrintName = "Nico Nico Nii"
 SWEP.Author = "PrikolMen:-b"
 SWEP.Spawnable = true
 
+-- Slots
+SWEP.Slot = 1
+SWEP.SlotPos = 120
+
 -- Info Box
 if (CLIENT) then
     SWEP.DrawWeaponInfoBox = false
@@ -42,7 +46,7 @@ function SWEP:Inizialize()
     self:SetWeaponHoldType( self.HoldType )
 end
 
-local IsDedicated = game.IsDedicated
+local IsDedicated = game.IsDedicated()
 function SWEP:PrimaryAttack()
     if (CLIENT) and (IsDedicated) then return end
 	self:EmitSound( self.Primary.Sound )
