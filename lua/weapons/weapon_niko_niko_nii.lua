@@ -42,17 +42,18 @@ function SWEP:Inizialize()
     self:SetWeaponHoldType( self.HoldType )
 end
 
+local IsDedicated = game.IsDedicated
 function SWEP:PrimaryAttack()
-    if (CLIENT) then return end
+    if (CLIENT) and (IsDedicated) then return end
 	self:EmitSound( self.Primary.Sound )
 end
 
 function SWEP:SecondaryAttack()
-    if (CLIENT) then return end
+    if (CLIENT) and (IsDedicated) then return end
 	self:EmitSound( self.Secondary.Sound )
 end
 
 function SWEP:Reload()
-    if (CLIENT) then return end
+    if (CLIENT) and (IsDedicated) then return end
     self:EmitSound( self.ReloadSound )
 end
